@@ -1,2 +1,11 @@
 server:
   port: 3001
+
+eureka:
+  instance:
+    hostname: ${hostname}
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${eureka.server}/eureka/
